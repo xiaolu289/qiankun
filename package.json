@@ -15,8 +15,7 @@
   "types": "./es/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "examples:init": "npm-run-all --serial build examples:install",
-    "examples:install": "npm-run-all --parallel install:*",
+    "examples:install": "npm-run-all --serial build install:*",
     "examples:start": "npm-run-all --parallel start:*",
     "examples:start-multiple": "run-p start-main-multiple start:react15 start:vue",
     "install:main": "cd examples/main && yarn",
